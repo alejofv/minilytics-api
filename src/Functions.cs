@@ -28,5 +28,14 @@ namespace Alejof.Minilytics
             log.LogInformation($"C# Http trigger function processed: {nameof(Warmup)}");
             return new OkResult();
         }
+
+        [FunctionName(nameof(Log))]
+        public IActionResult Log(
+            [HttpTrigger(AuthorizationLevel.Function, "post", Route = "log")]HttpRequest req,
+            ILogger log)
+        {
+            log.LogInformation($"C# Http trigger function processed: {nameof(Log)}");
+            return new OkResult();
+        }
     }
 }
