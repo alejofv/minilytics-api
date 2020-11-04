@@ -5,7 +5,6 @@
     <RootNamespace>Alejof.Minilytics</RootNamespace>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Mediatr" Version="9.0.0" />
     <PackageReference Include="Mediatr.Extensions.Microsoft.DependencyInjection" Version="9.0.0" />
     <PackageReference Include="Microsoft.Azure.Functions.Extensions" Version="1.1.0" />
     <PackageReference Include="Microsoft.Azure.WebJobs.Extensions.Storage" Version="4.0.3" />

@@ -8,8 +8,7 @@ namespace Alejof.Minilytics
     {
         public override void Configure(IFunctionsHostBuilder builder)
         {
-            // builder.Services.AddFunctionSettings();
-            builder.Services.AddMediatR(typeof(Startup));
+            
         }
     }
 }
