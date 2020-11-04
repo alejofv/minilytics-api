@@ -17,6 +17,8 @@ namespace Alejof.Minilytics.Models
         public LogEntry(string source, string url)
         {
             var safeUrl = url.Replace("/", "-");
+            if (!safeUrl.StartsWith("-"))
+                safeUrl = "-" + safeUrl;
             
             this.PartitionKey = $"{source}{safeUrl}";
             this.RowKey = Guid.NewGuid().ToString();
